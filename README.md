@@ -1,7 +1,9 @@
 # Lowest Common-Ancestor
 CS3012 Assignment
+My first Haskell program.
 
 ## Task
+* Lowest Common Ancestor for a binary tree.
 * Choose a unit testing framework. A comprehensive by language list is available here.
 * Create a repository on a git service such as Github. Your work will be implemented in this repository.
 * Define a set of initial unit tests that capture the basic expected behaviour. This will require you to create sample data and also to identify the basic API for your solution.
@@ -12,6 +14,6 @@ CS3012 Assignment
 I have decided to implement the solution with the unit testing using Haskell.
 
 #### TODO:   
-* start the project
 * write unit test
+* lca Function
 * Update readme to reflect current state of the project

@@ -15,3 +15,8 @@ bTree =
                 (Node 'F' Empty Empty)
                 (Node 'G' Empty Empty)
             )
+
+
+lca :: Ord a => Tree a -> a -> a
+lca Empty _ _ = Nothing
+lca Left Right 
