@@ -14,6 +14,6 @@ My first Haskell program.
 I have decided to implement the solution with the unit testing using Haskell.
 
 #### TODO:   
-* write unit test
-* lca Function
+* write more unit test
 * Update readme to reflect current state of the project
+* Sort out stack build and test.. ExitFailure 1
