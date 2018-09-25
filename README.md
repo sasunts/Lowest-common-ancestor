@@ -12,8 +12,9 @@ My first Haskell program.
 
 ### My implementation
 I have decided to implement the solution with the unit testing using Haskell.
+The main lca function has came from a resource online, tweaked to match what is needed.
 
 #### TODO:   
-* write more unit test
-* Update readme to reflect current state of the project
+* Unit test lca for all possible scenarios
 * Sort out stack build and test.. ExitFailure 1
+* fix build issues
