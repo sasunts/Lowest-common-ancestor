@@ -18,3 +18,4 @@ The main lca function has came from a resource online, tweaked to match what is 
 * Unit test lca for all possible scenarios
 * Sort out stack build and test.. ExitFailure 1
 * fix build issues
+* Look into app/Main.hs issues may lie here
