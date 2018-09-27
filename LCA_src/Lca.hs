@@ -1,5 +1,5 @@
-module Lib
-    ( bTree,lca, lcaPrint
+module Lca
+    ( bTree,lca, lcaPrint,
     ) where
 
 --data type declared
@@ -41,4 +41,4 @@ lcaPrint :: (Eq a, Show a) => Tree a -> a -> a -> String
 lcaPrint t x y =  result
     where result = case lca t x y of
                     Right a -> show a
-                    _ -> "Error"
+                    _ -> "0"

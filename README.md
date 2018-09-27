@@ -13,6 +13,8 @@ My first Haskell program.
 ### My implementation
 I have decided to implement the solution with the unit testing using Haskell.
 The main lca function has came from a resource online, tweaked to match what is needed.
+First test implemented.
+in order to run the test you must be inside the `LCA_src` then run the command `runhaskell ./LcaSpec.hs`
 
 #### TODO:   
 * Unit test lca for all possible scenarios
