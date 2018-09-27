@@ -17,7 +17,8 @@ First test implemented.
 in order to run the test you must be inside the `LCA_src` then run the command `runhaskell ./LcaSpec.hs`
 
 #### TODO:   
-* Unit test lca for all possible scenarios
-* Sort out stack build and test.. ExitFailure 1
-* fix build issues
-* Look into app/Main.hs issues may lie here
+* Unit test lca for all possible scenarios.
+* Maybe write script to run tests.
+* Comment and documentation for the code.
+* Commit more!
+* Prepare for a branch
