@@ -18,3 +18,7 @@ main = hspec $ do
 
     it "lcaPrint for a tree with nodes 2 & 3 = 1" $
         lcaPrint bTree 2 3 `shouldBe` "1"
+
+        --fix code to make this work
+    it "lcaPrint error wrong type of nodes " $
+        lcaPrint bTree "c" "d" `shouldBe` "Error"
