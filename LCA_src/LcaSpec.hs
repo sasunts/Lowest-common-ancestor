@@ -12,3 +12,6 @@ main = hspec $ do
 
     it "lcaPrint error node that doesn't exist" $
         lcaPrint bTree 3 0 `shouldBe` "Error"
+
+    it "lcaPrint empty no tree" $
+        lcaPrint emptyTree 3 0 `shouldBe` "Error"

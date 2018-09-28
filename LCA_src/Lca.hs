@@ -1,9 +1,13 @@
 module Lca
-    ( bTree,lca, lcaPrint,
+    ( bTree,lca, lcaPrint, emptyTree
     ) where
 
 
 data Tree a = Empty | Node a (Tree a) (Tree a) deriving (Show)
+
+emptyTree :: Tree Int
+emptyTree = Empty
+
 
 bTree :: Tree Int
 bTree =
