@@ -16,9 +16,10 @@ The main lca function has came from a resource online, tweaked to match what is 
 First test implemented.
 in order to run the test you must be inside the `LCA_src` then run the command `runhaskell ./LcaSpec.hs`
 
+Tests can now be ran by running the `runTests.sh` script
+
 #### TODO:   
 * Unit test lca for all possible scenarios.
-* Maybe write script to run tests.
 * Comment and documentation for the code.
 * Commit more!
 * Prepare for a branch

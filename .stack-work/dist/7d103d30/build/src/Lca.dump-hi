@@ -1,0 +1,291 @@
+
+==================== FINAL INTERFACE ====================
+2018-09-27 19:59:44.7489121 UTC
+
+interface Lowest-common-ancestor-0.1.0.0-GTeHDaT6fsa4c8igZjTReE:Lca 8043
+  interface hash: 77013a59bfcad57b8e05249706444b3d
+  ABI hash: 92240776c89b0f0862148f93d072d1ea
+  export-list hash: df6d08cabb4e24bcac79b376200ffeea
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: a35bf6cdedbe085ef399a3261fe1421f
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lca.bTree
+  Lca.lca
+  Lca.lcaPrint
+  Lca.someFunc
+module dependencies:
+package dependencies: base-4.11.1.0* ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+import  -/  base-4.11.1.0:Data.Either 917cb7ca74324934e13727e32d71d117
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.Show 6211aec7cccd267a5ee999e4414d7b90
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  base-4.11.1.0:System.IO 7331ec6891ba7763ad75720258619382
+import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+fa762da25fc53fdf0e903bb9a970e934
+  $fShowTree :: GHC.Show.Show a => GHC.Show.Show (Lca.Tree a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(C(U))),A,A)>m, Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: GHC.Show.Show a).
+                  @ (Lca.Tree a)
+                  (Lca.$fShowTree_$cshowsPrec @ a v)
+                  (Lca.$fShowTree_$cshow @ a v)
+                  (Lca.$fShowTree_$cshowList @ a v) -}
+295771e6bb4cb4e7af9c234226dde5e3
+  $fShowTree1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+fa762da25fc53fdf0e903bb9a970e934
+  $fShowTree_$cshow ::
+    GHC.Show.Show a => Lca.Tree a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dShow :: GHC.Show.Show a) (x :: Lca.Tree a) ->
+                 Lca.$fShowTree_$cshowsPrec
+                   @ a
+                   $dShow
+                   Lca.$fShowTree1
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+fa762da25fc53fdf0e903bb9a970e934
+  $fShowTree_$cshowList ::
+    GHC.Show.Show a => [Lca.Tree a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (ls :: [Lca.Tree a])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Lca.Tree a)
+                   (Lca.$fShowTree_$cshowsPrec @ a $dShow Lca.$fShowTree1)
+                   ls
+                   s) -}
+fa762da25fc53fdf0e903bb9a970e934
+  $fShowTree_$cshowsPrec ::
+    GHC.Show.Show a => GHC.Types.Int -> Lca.Tree a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(C(U))),A,A)><L,1*U(U)><S,1*U> -}
+3460b9eb4e179393f870b8e07151ec99
+  $tc'Empty :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16576950819722674152##
+                   9369806892183840895##
+                   Lca.$trModule
+                   Lca.$tc'Empty2
+                   1#
+                   Lca.$tc'Empty1) -}
+434536b54ff92b3a06ba965ec5fe9e7c
+  $tc'Empty1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+d22bfe87d13c1ad8c45646ea9422898c
+  $tc'Empty2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lca.$tc'Empty3) -}
+55ad0573360286cfcb461e4313843b08
+  $tc'Empty3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Empty"#) -}
+f9d66bae3154d95369f35dbe543f758f
+  $tc'Node :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16047120359087506955##
+                   16058361516299455893##
+                   Lca.$trModule
+                   Lca.$tc'Node2
+                   1#
+                   Lca.$tc'Node1) -}
+395987a4a699847225f51bcb90472efb
+  $tc'Node1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+49b3a70f508a239e0b82b4e27a4b2201
+  $tc'Node2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lca.$tc'Node3) -}
+766d6fac30180cf0166080528dec03c9
+  $tc'Node3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Node"#) -}
+c8a3fedbedb38dbdc5ad805ab7c38ac3
+  $tcTree :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17892183282249865427##
+                   11981836072937933297##
+                   Lca.$trModule
+                   Lca.$tcTree1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+642c70f98b9227d03e58bbfcddadaa1c
+  $tcTree1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lca.$tcTree2) -}
+d16e3ad142bae30514ceaf8e69312c86
+  $tcTree2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Tree"#) -}
+226076185d7fea197a840f79570c4939
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Lca.$trModule3 Lca.$trModule1) -}
+0046eee4c1be087c770052bc5a057178
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lca.$trModule2) -}
+9e95958ff574db39eea37a71862dd2aa
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Lca"#) -}
+2b25194ccc7833b332cdee51c43b53d6
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lca.$trModule4) -}
+a7b556b0d329f8593d0cbfa23f8b2b70
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Lowest-common-ancestor-0.1.0.0-GTeHDaT6fsa4c8igZjTReE"#) -}
+fa762da25fc53fdf0e903bb9a970e934
+  data Tree a = Empty | Node a (Lca.Tree a) (Lca.Tree a)
+092ffb21be16194a3fba96f51b3b2bb8
+  bTree :: Lca.Tree GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Lca.Node
+                   @ GHC.Types.Int
+                   Lca.bTree13
+                   Lca.bTree7
+                   Lca.bTree1) -}
+6cca921b8bd7371ee419adaf2a0c58ae
+  bTree1 :: Lca.Tree GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Lca.Node
+                   @ GHC.Types.Int
+                   Lca.bTree6
+                   Lca.bTree4
+                   Lca.bTree2) -}
+83a218c681ffbc89423c0fd624337012
+  bTree10 :: Lca.Tree GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Lca.Node
+                   @ GHC.Types.Int
+                   Lca.bTree11
+                   (Lca.Empty @ GHC.Types.Int)
+                   (Lca.Empty @ GHC.Types.Int)) -}
+b2dca3dd718efc5b9ab35ae755d6de17
+  bTree11 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 4#) -}
+017305c12297a9b47d38bee737426f75
+  bTree12 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 2#) -}
+571b6c203bc4888344ae506ed2da219a
+  bTree13 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+f719e01d9ea49daa97ceeae8a3c896ab
+  bTree2 :: Lca.Tree GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Lca.Node
+                   @ GHC.Types.Int
+                   Lca.bTree3
+                   (Lca.Empty @ GHC.Types.Int)
+                   (Lca.Empty @ GHC.Types.Int)) -}
+8235021a5d802fc74d09377b48901101
+  bTree3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 7#) -}
+84691c3560727fad18c71a79a039db41
+  bTree4 :: Lca.Tree GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Lca.Node
+                   @ GHC.Types.Int
+                   Lca.bTree5
+                   (Lca.Empty @ GHC.Types.Int)
+                   (Lca.Empty @ GHC.Types.Int)) -}
+152d2fbf57b39d9ef354920b177b17c1
+  bTree5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 6#) -}
+edca5437d9ec726978846d52c5afe638
+  bTree6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 3#) -}
+c8c584e7e1aa793615f153b95b2149de
+  bTree7 :: Lca.Tree GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Lca.Node
+                   @ GHC.Types.Int
+                   Lca.bTree12
+                   Lca.bTree10
+                   Lca.bTree8) -}
+980f55386f58cbc05c0814c7219da44f
+  bTree8 :: Lca.Tree GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Lca.Node
+                   @ GHC.Types.Int
+                   Lca.bTree9
+                   (Lca.Empty @ GHC.Types.Int)
+                   (Lca.Empty @ GHC.Types.Int)) -}
+c30e3eee2239b105ec36b5e3180ff394
+  bTree9 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 5#) -}
+d8ba2ed007d8fe33040e777ecf9be2eb
+  lca ::
+    GHC.Classes.Eq a =>
+    Lca.Tree a -> a -> a -> Data.Either.Either GHC.Types.Bool a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S,1*U><L,U><L,U> -}
+5defb78314a358dc1cfa4a175e16ff5d
+  lcaPrint ::
+    (GHC.Classes.Eq a, GHC.Show.Show a) =>
+    Lca.Tree a -> a -> a -> GHC.Base.String
+  {- Arity: 5,
+     Strictness: <L,U(C(C1(U)),A)><L,1*U(A,1*C1(U),A)><S,1*U><L,U><L,U>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   ($dShow :: GHC.Show.Show a)
+                   (t :: Lca.Tree a)
+                   (x :: a)
+                   (y :: a) ->
+                 case Lca.lca @ a $dEq t x y of wild {
+                   Data.Either.Left ipv -> Lca.lcaPrint1
+                   Data.Either.Right a1 -> GHC.Show.show @ a $dShow a1 }) -}
+915abcbc5426191143c2b310159cc530
+  lcaPrint1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Lca.lcaPrint2) -}
+05695d73ac09a176225601e02694209f
+  lcaPrint2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("0"#) -}
+dc2fc87d85ceacc3d48b5ac80c301531
+  someFunc :: GHC.Types.IO ()
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                Lca.someFunc1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+2fd139296c801fd2207bb58f126abd96
+  someFunc1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Lca.someFunc2
+                   GHC.Types.True) -}
+4fafa125e0e85f017f0947878a29abab
+  someFunc2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Lca.someFunc3) -}
+abe2b769ef6c78a2dc0445f268d8feb5
+  someFunc3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("This is my program. There are many like it but this one is mine."#) -}
+instance [safe] GHC.Show.Show [Lca.Tree] = Lca.$fShowTree
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

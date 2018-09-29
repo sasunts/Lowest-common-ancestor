@@ -1,0 +1,2 @@
+runhaskell ./LcaSpec.hs
+$SHELL
