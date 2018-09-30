@@ -12,7 +12,7 @@ main = hspec $ do
     it "lcaPrint error node that doesn't exist" $
         lcaPrint bTree 8 0 `shouldBe` "Error"
 
-    it "lcaPrint empty no tree" $
+    it "lcaPrint empty tree" $
         lcaPrint emptyTree 3 1 `shouldBe` "Error"
 
     it "lcaPrint for a tree with nodes 2 & 3 = 1" $
@@ -23,6 +23,9 @@ main = hspec $ do
 
     it "lca with nodes that don't exist" $
         lca bTree 0 8 `shouldBe` Left False
+
+    it "lca with Empty tree" $
+        lca emptyTree 0 1 `shouldBe` Left False
 
 --TODO:fix code to make this work
     -- it "lcaPrint error wrong type of nodes " $
