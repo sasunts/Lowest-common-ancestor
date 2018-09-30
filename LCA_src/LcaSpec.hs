@@ -1,7 +1,6 @@
 module LcaSpec where
 
 import Lca
-
 import Test.Hspec
 
 main :: IO ()
@@ -21,6 +20,9 @@ main = hspec $ do
 
     it "lca with a real tree and nodes" $
         lca bTree 4 5 `shouldBe` Right 2
+
+    it "lca with nodes that don't exist" $
+        lca bTree 0 8 `shouldBe` Left False
 
 --TODO:fix code to make this work
     -- it "lcaPrint error wrong type of nodes " $
