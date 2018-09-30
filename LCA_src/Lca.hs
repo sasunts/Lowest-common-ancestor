@@ -2,13 +2,14 @@ module Lca
     ( bTree,lca, lcaPrint, emptyTree
     ) where
 
-
+--Tree's structure
 data Tree a = Empty | Node a (Tree a) (Tree a) deriving (Show)
 
+--empty tree
 emptyTree :: Tree Int
 emptyTree = Empty
 
-
+--tree with 3 levels
 bTree :: Tree Int
 bTree =
         Node 1
@@ -21,6 +22,7 @@ bTree =
                 (Node 7 Empty Empty)
             )
 
+--function to find lca
 lca :: Eq a => Tree a -> a -> a -> Either Bool a
 lca Empty _ _ = Left False
 lca (Node v tl tr) x y =
@@ -38,6 +40,7 @@ lca (Node v tl tr) x y =
         (_         , _        , True ) -> Left True
         _ -> Left False
 
+--function to print lca
 lcaPrint :: (Eq a, Show a) => Tree a -> a -> a -> String
 lcaPrint t x y =  result
     where result = case lca t x y of
