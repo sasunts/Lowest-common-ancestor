@@ -19,7 +19,6 @@ in order to run the test you must be inside the `LCA_src` then run the command `
 Tests can now be ran by running the `runTests.sh` script
 
 #### TODO:   
-* Unit test lca for all possible scenarios.
+* Error handling in the code for wrong type of inputs
 * Comment and documentation for the code.
-* Commit more!
 * Prepare for a branch
