@@ -39,6 +39,9 @@ main = hspec $ do
     it "lca with a real tree and nodes of different nodes" $
         lca bTree 1 7 `shouldBe` Right 1
 
+    it "lca with a real tree and nodes of different nodes" $
+        lca bTree 5 7 `shouldBe` Right 1
+
     it "lca with nodes that don't exist" $
         lca bTree 0 8 `shouldBe` Left False
 
