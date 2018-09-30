@@ -18,12 +18,15 @@ main = hspec $ do
     it "lcaPrint nodes of different levels" $
         lcaPrint bTree 1 7 `shouldBe` "1"
 
+    it "lcaPrint nodes of different level nodes" $
+        lcaPrint bTree 5 7 `shouldBe` "1"
+
+
     it "lcaPrint error node that doesn't exist" $
         lcaPrint bTree 8 0 `shouldBe` "Error"
 
     it "lcaPrint empty tree" $
         lcaPrint emptyTree 3 1 `shouldBe` "Error"
-
 
     it "lca with a real tree and nodes" $
         lca bTree 4 5 `shouldBe` Right 2
