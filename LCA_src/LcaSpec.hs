@@ -9,6 +9,9 @@ main = hspec $ do
     it "lcaPrint nodes of 1 level" $
       lcaPrint bTree 2 3 `shouldBe` "1"
 
+    it "lcaPrint same nodes" $
+        lcaPrint bTree 2 2 `shouldBe` "2"
+
     it "lcaPrint nodes of 2 levels" $
         lcaPrint bTree 5 4 `shouldBe` "2"
 
