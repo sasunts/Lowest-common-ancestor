@@ -2,6 +2,7 @@ module Lca
     ( bTree,lca, lcaPrint, emptyTree
     ) where
 
+import Control.Error
 --Tree's structure
 data Tree a = Empty | Node a (Tree a) (Tree a) deriving (Show)
 
@@ -25,6 +26,8 @@ bTree =
 --function to find lca
 lca :: Eq a => Tree a -> a -> a -> Either Bool a
 lca Empty _ _ = Left False
+lca tree x y 
+    | x == y = Right x
 lca (Node v tl tr) x y =
     let l = lca tl x y
         r = lca tr x y
