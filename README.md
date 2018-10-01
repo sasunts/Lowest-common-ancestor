@@ -18,6 +18,8 @@ in order to run the test you must be inside the `LCA_src` then run the command `
 
 Tests can now be ran by running the `runTests.sh` script
 
+Testing is done using Hspec testing framework.
+
 #### TODO:   
 * Error handling in the code for wrong type of inputs
 * Comment and documentation for the code.
