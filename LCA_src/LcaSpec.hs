@@ -55,5 +55,7 @@ main = hspec $ do
         lca emptyTree 0 1 `shouldBe` Left False
 
 --TODO:fix code to make this work
-    -- it "lcaPrint error wrong type of nodes " $
-    --     lcaPrint bTree "c" "d" `shouldBe` "Error"
+     -- it "lcaPrint error wrong type of nodes " $
+     --     lcaPrint emptyTree "c" "d" `shouldBe` "Error"
+-- speaking with Andrew Butterfield he said that testing functions
+--you should always stick to the same types and not test other types like above char
