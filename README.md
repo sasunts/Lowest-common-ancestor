@@ -2,6 +2,8 @@
 CS3012 Assignment
 My first Haskell program.
 
+Branch for new features: Make solution work for directed acyclic graph.  
+
 ## Task
 * Lowest Common Ancestor for a binary tree.
 * Choose a unit testing framework. A comprehensive by language list is available here.
