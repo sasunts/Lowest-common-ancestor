@@ -4,6 +4,7 @@ module Lca
 
 import Control.Error
 --Tree's structure
+--TODO: New data structure for DAG
 data Tree a = Empty | Node a (Tree a) (Tree a) deriving (Show)
 
 --empty tree
@@ -23,10 +24,12 @@ bTree =
                 (Node 7 Empty Empty)
             )
 
+
+--TODO: New function for LCA to work on DAG also
 --function to find lca
 lca :: Eq a => Tree a -> a -> a -> Either Bool a
 lca Empty _ _ = Left False
-lca tree x y 
+lca tree x y
     | x == y = Right x
 lca (Node v tl tr) x y =
     let l = lca tl x y
