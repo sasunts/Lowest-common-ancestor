@@ -23,4 +23,4 @@ Testing is done using Hspec testing framework.
 #### TODO:   
 * Error handling in the code for wrong type of inputs
 * Comment and documentation for the code.
-* Prepare for a branch
+* Make DAG
