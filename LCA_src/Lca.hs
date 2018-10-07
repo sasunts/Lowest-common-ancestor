@@ -5,6 +5,14 @@ module Lca
 import Control.Error
 --Tree's structure
 --TODO: New data structure for DAG
+--Structure I want where nodes are chars and are linked by numbers relation
+--Below node a is connected to b, c and e etc.
+-- [Node "a" [1,2,4], Node "b" [3], Node "c" [3,4], Node "d" [], Node "e" []]
+
+
+
+
+
 data Tree a = Empty | Node a (Tree a) (Tree a) deriving (Show)
 
 --empty tree
