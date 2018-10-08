@@ -1,4 +1,4 @@
-# Lowest Common-Ancestor
+# Lowest Common-Ancestor 2
 CS3012 Assignment
 My first Haskell program.
 
@@ -25,3 +25,4 @@ Testing is done using Hspec testing framework.
 #### TODO:   
 * Comment and documentation for the code.
 * Make DAG
+* Due October 9th
