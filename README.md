@@ -20,6 +20,8 @@ Tests can now be ran by running the `runTests.sh` script
 
 Testing is done using Hspec testing framework.
 
+![alt text](https://raw.githubusercontent.com/sasunts/Lowest-common-ancestor/master/tests.PNG)
+
 #### TODO:   
 * Error handling in the code for wrong type of inputs
 * Comment and documentation for the code.
