@@ -2,7 +2,7 @@ module Lca
     ( bTree,lca, lcaPrint, emptyTree
     ) where
 
---import Control.Error
+
 --Tree's structure
 data Tree a = Empty | Node a (Tree a) (Tree a) deriving (Show)
 
