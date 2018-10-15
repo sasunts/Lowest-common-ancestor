@@ -45,6 +45,19 @@ dagTree = DAGNode 1 [Fin0,FinS Fin0,FinS Fin0,FinS (FinS (FinS (Fin0)))]
       ::: DAGNode 5 []
       ::: E
 
+--ideal conversion
+-- dagTree' :: Tree Int
+-- dagTree' = Node 1
+--               (Node 2
+--                     (Node 4 Empty Empty)
+--                     Empty
+--               )
+--               (Node 3
+--                     (Node 4 Empty Empty)
+--                     (Node 5 Empty Empty)
+--               )
+
+
 --empty tree
 emptyTree :: Tree Int
 emptyTree = Empty
