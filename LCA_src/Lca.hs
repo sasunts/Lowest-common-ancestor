@@ -24,13 +24,19 @@ data DAGTree a = TNode a [DAGTree a]  deriving Show
 
 data Tree a = Empty | Node a (Tree a) (Tree a) deriving (Show)
 
--- Convert a DAG to a tree, using the given node index as root
+
 toTree :: Fin n -> DAG a n -> DAGTree a
 toTree Fin0 (DAGNode x cs ::: ns) = TNode x [toTree c ns | c <- cs]
-toTree (FinS i) (_ ::: ns) = toTree i ns -- drop the head until we reach the root
+toTree (FinS i) (_ ::: ns) = toTree i ns
 
 toTree' :: DAG a (Succ n) -> DAGTree a
 toTree' = toTree Fin0
+
+--conversion changes to this format
+--TNode 1 [TNode 2 [TNode 4 [],TNode 4 []],TNode 3 [TNode 4 [],TNode 5 []],TNode 3 [TNode 4 [],TNode 5 []],TNode 5 []]
+--needs to be:
+--TNode 1 (TNode 2 (TNode 4 Empty Empty) Empty TNode 3 ((TNode 4 Empty Empty) (TNode 5 Empty Empty)))
+--this should satisfy commen ancestors.
 
 dagTree = DAGNode 1 [Fin0,FinS Fin0,FinS Fin0,FinS (FinS (FinS (Fin0)))]
       ::: DAGNode 2 [FinS Fin0,FinS Fin0]
