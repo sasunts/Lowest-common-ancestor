@@ -1,6 +1,5 @@
 # Lowest Common-Ancestor
 CS3012 Assignment
-My first Haskell program.
 
 ## Task
 * Lowest Common Ancestor for a binary tree.
@@ -11,18 +10,13 @@ My first Haskell program.
 * Refine the solution, expanding your test cases to deal with awkward parameters and edge cases that push the limits of your solution, enhancing your solution to deal with these.
 
 ### My implementation
-I have decided to implement the solution with the unit testing using Haskell.
+I have decided to implement the solution with the unit testing using Python.
 The main lca function has came from a resource online, tweaked to match what is needed.
 First test implemented.
-in order to run the test you must be inside the `LCA_src` then run the command `runhaskell ./LcaSpec.hs`
+in order to run the test you must be inside the `Src` then run the command `pyhton .\test.py`
 
-Tests can now be ran by running the `runTests.sh` script
-
-Testing is done using Hspec testing framework.
-
-![alt text](https://raw.githubusercontent.com/sasunts/Lowest-common-ancestor/master/tests.PNG)
 
 #### TODO:   
-* Error handling in the code for wrong type of inputs
+* Add more tests for all cases
 * Comment and documentation for the code.
 * Make DAG
