@@ -29,6 +29,14 @@ def dagLCA(root,n1,n2):
     if root.key == n1 or root.key == n2:
         return root
 
+    i=0
+    j=0
+    while(i<len(n1.pred)):
+        while(j<len(n2.pred)):
+            if(n1.pred[i] == n2.pred[j]):
+                return n1.pred[i]
+            else:
+                return None
 
 
 

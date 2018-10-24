@@ -30,7 +30,7 @@ class TestLca(unittest.TestCase):
 #test cases for DAG
 
     def test_node1_3(self):
-        self.assertEqual(lca.dagLCA(lca.root, 1, 3).key, 1)
+        self.assertEqual(lca.dagLCA(lca.root, lca.root.key, lca.r3.key).key, 1)
 
     def test_node_None(self):
         self.assertEqual(lca.dagLCA(None, 1, 3), None)
@@ -38,6 +38,8 @@ class TestLca(unittest.TestCase):
     def test_node3_1(self):
         self.assertEqual(lca.dagLCA(lca.root, 3, 1).key, 1)
 
+    def test_node2_3(self):
+        self.assertEqual(lca.dagLCA(lca.root, lca.r2, lca.r3).key, 1)
 
 
 if __name__ == '__main__':
