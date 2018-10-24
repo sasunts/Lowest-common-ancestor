@@ -39,7 +39,7 @@ class TestLca(unittest.TestCase):
         self.assertEqual(lca.dagLCA(lca.root, 3, 1).key, 1)
 
     def test_node2_3(self):
-        self.assertEqual(lca.dagLCA(lca.root, lca.r2, lca.r3).key, 1)
+        self.assertEqual(lca.dagLCA(lca.root, lca.r2, lca.r3), 1)
 
 
 if __name__ == '__main__':
