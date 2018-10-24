@@ -40,19 +40,7 @@ def dagLCA(root,n1,n2):
             else:
                 j+=1
         i+=1
-
-    i = 0
-    lowest = 0
-    while(i<len(lca)):
-        j=0
-        while(j<len(lca)):
-            if(lca[i] <= lca[j]):
-                lowest = lca[i]
-                j+=1
-            else:
-                j+=1
-        i+=1
-    return lowest
+    return max(lca)
 
 root = Node(1)
 r2 = Node(2)
