@@ -41,6 +41,9 @@ class TestLca(unittest.TestCase):
     def test_node2_3(self):
         self.assertEqual(lca.dagLCA(lca.root, lca.r2, lca.r3), 1)
 
+    def test_node5_4(self):
+        self.assertEqual(lca.dagLCA(lca.root, lca.r5, lca.r4), 1)
+
 
 if __name__ == '__main__':
     unittest.main()

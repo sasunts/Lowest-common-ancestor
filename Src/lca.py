@@ -37,6 +37,8 @@ def dagLCA(root,n1,n2):
             if(n1.pred[i].key == n2.pred[j].key):
                 lca.append(n1.pred[i].key)
                 j+=1
+            else:
+                j+=1
         i+=1
 
     i = 0
@@ -46,9 +48,10 @@ def dagLCA(root,n1,n2):
         while(j<len(lca)):
             if(lca[i] <= lca[j]):
                 lowest = lca[i]
-            j+=1
+                j+=1
+            else:
+                j+=1
         i+=1
-
     return lowest
 
 root = Node(1)
