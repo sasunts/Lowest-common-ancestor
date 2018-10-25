@@ -2,7 +2,7 @@
 CS3012 Assignment
 
 ## Task
-* Lowest Common Ancestor for a binary tree.
+* Lowest Common Ancestor for a directed acyclic graph.
 * Choose a unit testing framework. A comprehensive by language list is available here.
 * Create a repository on a git service such as Github. Your work will be implemented in this repository.
 * Define a set of initial unit tests that capture the basic expected behaviour. This will require you to create sample data and also to identify the basic API for your solution.
@@ -11,12 +11,5 @@ CS3012 Assignment
 
 ### My implementation
 I have decided to implement the solution with the unit testing using Python.
-The main lca function has came from a resource online, tweaked to match what is needed.
-First test implemented.
+Dag structure is stored as predecessor and successor of nodes.
 in order to run the test you must be inside the `Src` then run the command `pyhton .\test.py`
-
-
-#### TODO:   
-* Add more tests for all cases
-* Comment and documentation for the code.
-* Make DAG
