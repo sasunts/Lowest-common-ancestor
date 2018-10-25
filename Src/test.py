@@ -27,7 +27,6 @@ class TestLca(unittest.TestCase):
     def test_node_fake(self):
         self.assertEqual(lca.findLCA(lca.root, 8, 8), None)
 
-#TODO: Add more tests
 
 if __name__ == '__main__':
     unittest.main()
