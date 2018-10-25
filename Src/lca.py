@@ -21,6 +21,7 @@ class Node:
 #
 #     return left_lca if left_lca is not None else right_lca
 
+
 def dagLCA(root,n1,n2):
 
     if root is None:
@@ -28,9 +29,10 @@ def dagLCA(root,n1,n2):
 
     if root.key == n1 or root.key == n2:
         return root
-
-    i=0
+    if n1 == n2:
+        return n1.key
     lca = []
+    i=0
     while(i<len(n1.pred)):
         j=0
         while(j<len(n2.pred)):
@@ -40,6 +42,13 @@ def dagLCA(root,n1,n2):
             else:
                 j+=1
         i+=1
+
+    if(lca == []):
+        if(n1.key > n2.key):
+            lca.append(dagLCA(root,n1.pred[0],n2))
+        else:
+            lca.append(dagLCA(root,n1,n2.pred[0]))
+
     return max(lca)
 
 root = Node(1)
