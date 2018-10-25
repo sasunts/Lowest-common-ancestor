@@ -5,23 +5,7 @@ class Node:
         self.pred = []
         self.succ = []
 
-# def findLCA(root, n1, n2):
-#
-#     if root is None:
-#         return None
-#
-#     if root.key == n1 or root.key == n2:
-#         return root
-#
-#     left_lca = findLCA(root.left, n1, n2)
-#     right_lca = findLCA(root.right, n1, n2)
-#
-#     if left_lca and right_lca:
-#         return root
-#
-#     return left_lca if left_lca is not None else right_lca
-
-
+#code for dag lca
 def dagLCA(root,n1,n2):
 
     if root is None:
@@ -51,6 +35,7 @@ def dagLCA(root,n1,n2):
 
     return max(lca)
 
+#directed acylic graph
 root = Node(1)
 r2 = Node(2)
 r3 = Node(3)
@@ -66,6 +51,22 @@ r4.succ = [r5]
 r4.pred = [r2,r3,root]
 r5.pred = [r3,r4,root]
 r6.pred = [r4]
+
+# def findLCA(root, n1, n2):
+#
+#     if root is None:
+#         return None
+#
+#     if root.key == n1 or root.key == n2:
+#         return root
+#
+#     left_lca = findLCA(root.left, n1, n2)
+#     right_lca = findLCA(root.right, n1, n2)
+#
+#     if left_lca and right_lca:
+#         return root
+#
+#     return left_lca if left_lca is not None else right_lca
 
 #binary tree nodes
 # root = Node(1)
